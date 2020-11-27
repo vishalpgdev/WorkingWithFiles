@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     android:padding="16dp"
-    tools:context=".internlfile.InternalFileActivity">
+    tools:context=".internlstoragefile.InternalFileActivity">
 
     <TextView
         android:id="@+id/tvINFile"

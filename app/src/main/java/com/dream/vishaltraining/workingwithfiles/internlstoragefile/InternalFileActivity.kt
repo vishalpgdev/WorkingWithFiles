@@ -1,4 +1,4 @@
-package com.dream.vishaltraining.workingwithfiles.internlfile
+package com.dream.vishaltraining.workingwithfiles.internlstoragefile
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity

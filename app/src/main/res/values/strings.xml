@@ -5,4 +5,5 @@
     <string name="enter_data_to_write_in_file">Enter Data To Write in File.</string>
     <string name="save">Save</string>
     <string name="view">View</string>
+    <string name="external_file_demo">external_file_demo</string>
 </resources>
