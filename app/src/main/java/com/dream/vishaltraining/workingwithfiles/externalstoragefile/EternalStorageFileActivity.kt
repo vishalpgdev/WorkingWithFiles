@@ -58,10 +58,11 @@ class EternalStorageFileActivity : AppCompatActivity() {
             if (fileName?.text.isNullOrEmpty())
             {
                 Toast.makeText(applicationContext, "file name can not empty", Toast.LENGTH_SHORT).show()
-                btnView.isEnabled = true
+                btnView.isEnabled = false
             }
             else
             {
+                btnView.isEnabled = true
                 myExternalFile = File(getExternalFilesDir(filePath),fileName?.text.toString())
 
                 val filename = fileName?.text.toString()
