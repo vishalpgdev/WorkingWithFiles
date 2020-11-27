@@ -1,16 +1,15 @@
-package com.pavansgroup.vishaltraining.workingwithfiles.internlfile
+package com.dream.vishaltraining.workingwithfiles.internlfile
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
-import com.pavansgroup.vishaltraining.workingwithfiles.R
+import com.dream.vishaltraining.workingwithfiles.R
 import kotlinx.android.synthetic.main.activity_internal_file.*
-import java.io.FileNotFoundException
-import java.io.FileOutputStream
-import java.io.IOException
+import java.io.*
 import java.lang.NumberFormatException
+import java.lang.StringBuilder
 
 class InternalFileActivity : AppCompatActivity() {
     private var fileName : EditText? = null
@@ -53,7 +52,24 @@ class InternalFileActivity : AppCompatActivity() {
         }
         //code for view the file data fro the internal.
         btnView.setOnClickListener {
-        
+        val filename = fileName?.text.toString()
+            if (filename.trim()!=""){
+                var fin : FileInputStream? =null
+                fin = openFileInput(filename)
+                var inSR:InputStreamReader = InputStreamReader(fin)
+                val bufferedReader : BufferedReader = BufferedReader(inSR)
+                val stringBuilder = StringBuilder()
+                var text:String? = null
+                while ({ text = bufferedReader.readLine();text}()!= null){
+
+                    stringBuilder.append(text)
+                }
+                //displaying data on editText.
+                fileData?.setText(stringBuilder.toString()).toString()
+            }
+            else{
+                Toast.makeText(applicationContext, "file name can not be empty.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

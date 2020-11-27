@@ -1,4 +1,4 @@
-package com.pavansgroup.vishaltraining.workingwithfiles
+package com.dream.vishaltraining.workingwithfiles
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

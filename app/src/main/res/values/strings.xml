@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">WorkingWithFiles</string>
     <string name="internal_file_demo">Internal File Demo</string>
-    <string name="enter_file_name">Enter File Name</string>
+    <string name="enter_file_name">Enter File Name for save new file and view</string>
     <string name="enter_data_to_write_in_file">Enter Data To Write in File.</string>
     <string name="save">Save</string>
     <string name="view">View</string>

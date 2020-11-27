@@ -1,4 +1,4 @@
-package com.pavansgroup.vishaltraining.workingwithfiles
+package com.dream.vishaltraining.workingwithfiles
 
 import org.junit.Test
 
